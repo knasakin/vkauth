@@ -1,0 +1,10 @@
+{% extends 'vkauth/base.html' %}
+
+{% block content %}
+    <h1>Вы авторизованы под id: {{ id }}</h1>
+    {% for friend in Friends.items %}
+        </p><a class="btn btn-primary btn-lg"
+          role="button"
+          href="http://vk.com/{{friend.domain}}">{{ friend.first_name }} {{ friend.last_name }}</a></p>
+    {% endfor %}
+{% endblock %}

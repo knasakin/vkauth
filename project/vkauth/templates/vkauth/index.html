@@ -1,0 +1,9 @@
+{% extends 'vkauth/base.html' %}
+
+{% block content %}
+    <h1>ВКонтакте</h1>
+    <p>Авторизуйтесь в ВК с помощью Authorization Code Flow.</p>
+    <p><a class="btn btn-primary btn-lg"
+          role="button"
+          href="{% url 'code_url' %}">Начать авторизацию</a></p>
+{% endblock %}
